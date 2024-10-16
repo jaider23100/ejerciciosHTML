@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva de Viaje</title>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+    <h2>* denotes mandatory</h2>
+
+        <label>Full name*:</label><br>
+        <input type="text" name="fullname" placeholder="FirstName LastName"><br>
+
+        <label>Email address*: </label><br>
+        <input type="text" name="email" placeholder="EMAIL_ADDRESS"><br>
+
+        <label>Select Tour Package*: </label><br>
+        <select name="package" required>
+            <option value="Goa">Goa</option>
+            <option value="brasil">brasil</option>
+            <option value="paris">paris</option>
+        </select><br>
+
+        <label>Arrival date*: </label><br>
+        <input type="text" name="arrival" placeholder="m/d/y"><br>
+
+        <label>Number of persons*: </label><br>
+        <input type="text" name="number" placeholder="UNKNOW_TYPE"><br>
+
+        <label>What would you want to avail?*: </label><br>
+        <input type="checkbox" name="service" value="Boarding">Boarding<br>
+        <input type="checkbox" name="service" value="Fooding">Fooding<br>
+        <input type="checkbox" name="service" value="Sight seeing">Sight seeing<br>
+
+        <label>Discount Coupon code: </label><br>
+        <input type="text" name="coupon" placeholder="UNKNOW_TYPE"><br>
+
+        <label>Terms and conditions*: </label><br>
+        <input type="radio" name="terms" value="agree" required>I agree
+        <input type="radio" name="terms" value="disagree">I disagree<br>
+
+        <input type="submit" value="Complete reservation">
+    </form>
+</body>
+</html>
