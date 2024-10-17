@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Ajustado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0; 
+        }
+
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 60%; 
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header, .footer, .hero, .main-content, .sidebar, .extra-content, .related-images, .related-posts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        
+        .header {
+            background-color: #7cdcff;
+            padding: 20px;
+        }
+
+        
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px; 
+            padding: 10px;
+        }
+
+        .hero {
+            background-color: #c5b4e3;
+            flex: 1 1 48%; 
+            height: 150px;
+        }
+
+        .main-content {
+            background-color: #f0c75e;
+            flex: 1 1 48%; 
+            height: 150px;
+        }
+
+        .sidebar {
+            background-color: #a2bc8b;
+            flex: 1 1 48%; 
+            height: 120px;
+        }
+
+        .extra-content {
+            background-color: #a0a0a0;
+            flex: 1 1 48%; 
+            height: 120px;
+        }
+        .related {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .related-images {
+            background-color: #4ab072;
+            flex: 1 1 65%;
+            height: 100px;
+        }
+
+        .related-posts {
+            background-color: #f4c8dc;
+            flex: 1 1 30%;
+            height: 100px;
+        }
+
+        .footer {
+            background-color: #ffa53a;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="main">
+            <div class="hero">Hero</div>
+            <div class="main-content">Main Content</div>
+            <div class="sidebar">Sidebar</div>
+            <div class="extra-content">Extra Content</div>
+        </div>
+        <div class="related">
+            <div class="related-images">Related Images</div>
+            <div class="related-posts">Related Posts</div>
+        </div>
+
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+</html>
